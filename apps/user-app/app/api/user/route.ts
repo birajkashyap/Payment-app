@@ -9,13 +9,13 @@ export const GET = () => {
   });
 };
 
-// export const POST = async (req: NextRequest, res: NextResponse) => {
-//   const body = await req.json();
-//   const { name, email } = body;
-//   await client.user.create({
-//     data: {
-//       name: name,
-//       email: email,
-//     },
-//   });
-// };
+export const POST = async (req: NextRequest, res: NextResponse) => {
+  const body = await req.json();
+  const { name, email } = body;
+  await client.user.create({
+    data: {
+      name: name,
+      email: email,
+    },
+  });
+};

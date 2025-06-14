@@ -8,7 +8,7 @@ export const GET = () => {
     message: "hi there",
   });
 };
-
+//test post route
 export const POST = async (req: NextRequest, res: NextResponse) => {
   const body = await req.json();
   const { name, email } = body;
